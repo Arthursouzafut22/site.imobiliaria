@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.cc-logo {
+  max-width: 90px;
+}
+
+.cc-localizacao {
+  display: flex;
+  align-items: center;
+}
+
+.cc-localizacao img {
+  max-width: 25px;
+}
+
+.cc-localizacao p {
+  color: #415763;
+}
+
+.mobi-breve {
+  display: none;
+}
+
+.breve-mobile {
+  display: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .header {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto !important;
+    padding: 10px;
+  }
+  .cc-logo {
+    display: none;
+  }
+
+  .cc-localizacao p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .mobi-breve {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .mobi-breve :nth-child(1) {
+    max-width: 50px;
+  }
+
+  .breve-mobile {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #415763;
+    font-weight: bold;
+  }
+  .loc-branco {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .cc-localizacao p {
+    font-size: 14px;
+  }
+
+  .breve-mobile {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #415763;
+    font-weight: bold;
+    max-width: 100%;
+  }
+  .loc-branco {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .header {
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .logo {
+    display: block;
+    max-width: 45px;
+  }
+
+  .cc-localizacao p {
+    font-size: 14px;
+  }
+
+  .breve-mobile {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #415763;
+    font-weight: bold;
+    max-width: 100%;
+  }
+  .loc-branco {
+    display: block;
+  }
+  .breve-mobile {
+    display: none;
+  }
+}

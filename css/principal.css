@@ -1,0 +1,408 @@
+.sessao-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  max-width: 100%;
+}
+
+.cc-principal {
+  margin-right: 330px;
+  overflow: hidden;
+}
+
+.cc-principal h1 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 18px auto 0px auto;
+  color: #fff;
+}
+
+.cc-principal h2 {
+  font-size: 80px;
+  font-weight: bolder;
+  margin: 0px auto;
+  color: #fff;
+  z-index: 2000;
+}
+.detalhe-span {
+  position: absolute;
+}
+
+.breve {
+  font-size: 22px;
+  display: block;
+  text-transform: uppercase;
+  color: #e7b685;
+}
+
+.lista li {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.cc-predio {
+  max-width: 800px;
+}
+
+.predio {
+  max-width: 600px;
+  position: absolute;
+  top: -60px;
+  left: 750px;
+  z-index: -1;
+}
+
+.logo-mirante {
+  position: absolute;
+  max-width: 200px;
+  display: block;
+  top: 110px;
+  right: 145px;
+}
+
+.sessao-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cc-familia {
+  position: relative;
+}
+
+.img-familia {
+  max-width: 600px;
+  z-index: 4000;
+  position: absolute;
+  top: -95px;
+  left: -184px;
+}
+
+.cc-inputs {
+  overflow: hidden;
+  max-width: 300px;
+  margin-top: 80px;
+}
+
+.cc-inputs input {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 18px 20px;
+  display: block;
+  margin: 8px auto;
+  box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.24);
+}
+
+.btn-queroMais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #e28529;
+  color: #fff;
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 100%;
+  cursor: pointer;
+}
+.btn-queroMais img {
+  max-width: 20px;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .cc-principal > h1,
+  h2,
+  .breve {
+    display: none !important;
+  }
+  .lista {
+    position: absolute;
+    bottom: -640px;
+    right: 25px;
+    overflow: hidden;
+  }
+
+  .lista li {
+    font-size: 15px;
+  }
+  .logo-mirante {
+    max-width: 150px;
+    display: block;
+    top: 0px;
+    right: 110px;
+    overflow: hidden;
+  }
+  .predio {
+    max-width: 350px;
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .img-familia {
+    display: none;
+  }
+
+  .cc-info img {
+    display: none;
+  }
+
+  .img-seta {
+    display: none !important;
+  }
+
+  .sessao-2 {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .cc-sessao-2 {
+    padding-left: 0px;
+    margin-top: 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .cc-familia {
+    display: none;
+  }
+
+  .cc-inputs {
+    margin-top: 0;
+    position: absolute;
+    left: 178px;
+    bottom: -290px;
+    overflow: hidden;
+  }
+
+  .cc-info {
+    position: relative;
+  }
+  .cc-info p {
+    text-align: center;
+    font-size: 133px;
+    font-weight: 500;
+    color: #1c2b34 !important;
+    position: absolute;
+    top: -40px;
+    left: -480px;
+    max-width: 350px;
+  }
+  .cc-info > img {
+    display: none;
+  }
+  .cc-numeros {
+    position: absolute;
+    flex-wrap: wrap !important;
+    bottom: -420px;
+    left: -270px;
+    max-width: 150px;
+    line-height: 1.2;
+  }
+  .cc-numeros span {
+    margin: 0px;
+    line-height: 1.1 !important;
+  }
+  .cc-numeros sub {
+    font-size: 30px !important;
+    line-height: 1.1 !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .cc-principal > h1,
+  h2,
+  .breve {
+    display: none !important;
+  }
+  .lista {
+    position: absolute;
+    bottom: -640px;
+    right: 100px;
+  }
+
+  .lista li {
+    font-size: 15px;
+  }
+  .logo-mirante {
+    max-width: 150px;
+    display: block;
+    top: 0px;
+    right: 130px;
+  }
+  .predio {
+    max-width: 350px;
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .img-familia {
+    display: none;
+  }
+
+  .sessao-2 {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .cc-sessao-2 {
+    padding-left: 0px;
+    margin-top: 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .cc-familia {
+    display: none;
+  }
+
+  .cc-inputs {
+    margin-top: 0;
+    position: absolute;
+    left: 178px;
+    bottom: -300px;
+  }
+
+  .cc-info {
+    position: relative;
+  }
+  .cc-info p {
+    text-align: center;
+    font-size: 133px;
+    position: absolute;
+    color: #1c2b34 !important;
+    top: -40px;
+    left: -480px;
+    max-width: 350px;
+  }
+  .cc-info > img {
+    display: none;
+  }
+  .cc-numeros {
+    position: absolute;
+    flex-wrap: wrap !important;
+    bottom: -420px;
+    left: -270px;
+    max-width: 150px;
+    line-height: 1.2;
+  }
+  .cc-numeros span {
+    margin: 0px;
+  }
+  .cc-numeros sub {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .cc-principal > h1,
+  h2,
+  .breve {
+    display: none !important;
+  }
+  .lista {
+    position: absolute;
+    bottom: -640px;
+    right: 250px;
+  }
+
+  .lista li {
+    font-size: 15px;
+  }
+  .logo-mirante {
+    max-width: 150px;
+    display: block;
+    top: 10px;
+    right: 330px;
+  }
+  .predio {
+    max-width: 500px;
+    position: absolute;
+    top: 450px;
+    left: 80px;
+    z-index: -1;
+  }
+
+  .img-familia {
+    display: none;
+  }
+
+  .sessao-2 {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .cc-sessao-2 {
+    padding-left: 0px;
+    margin-top: 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .cc-familia {
+    display: none;
+  }
+
+  .cc-inputs {
+    margin-top: 0;
+    position: absolute;
+    left: 278px;
+    bottom: -300px;
+  }
+
+  .cc-info {
+    position: relative;
+  }
+  .cc-info p {
+    text-align: center;
+    font-size: 150px;
+    color: #1c2b34 !important;
+    position: absolute;
+    top: -40px;
+    left: -380px;
+    max-width: 350px;
+  }
+  .cc-info > img {
+    display: none;
+  }
+  .cc-numeros {
+    position: absolute;
+    flex-wrap: wrap !important;
+    bottom: -420px;
+    left: -170px;
+    max-width: 150px;
+    line-height: 1.2;
+  }
+  .cc-numeros span {
+    margin: 0px;
+  }
+  .cc-numeros sub {
+    font-size: 30px !important;
+  }
+
+  .cc-info > img {
+    display: none;
+  }
+  .img-seta {
+    display: none;
+  }
+}
